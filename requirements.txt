@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 pandas
 wordcloud
 plotly
 collections
 numpy
+=======
+pandas
+wordcloud
+plotly
+collections
+numpy
+>>>>>>> 069d40b (Initial commit)
 streamlit
