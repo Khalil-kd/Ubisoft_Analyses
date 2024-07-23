@@ -1,4 +1,8 @@
-<<<<<<< HEAD
+from dataclasses import InitVar
+from git import HEAD
+
+
+HEAD
 
 import pandas as pd
 from wordcloud import WordCloud
@@ -1449,7 +1453,7 @@ st.markdown("""
      </style>
     """, unsafe_allow_html=True)
     
-=======
+
 
 import pandas as pd
 from wordcloud import WordCloud
@@ -2900,4 +2904,4 @@ st.markdown("""
      </style>
     """, unsafe_allow_html=True)
     
->>>>>>> 069d40b (Initial commit)
+
