@@ -1,4 +1,4 @@
-"""import pandas as pd
+import pandas as pd
 from wordcloud import WordCloud
 import plotly.graph_objs as go
 from collections import Counter
@@ -16,7 +16,7 @@ from textblob import TextBlob
 import altair as alt
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import wordcloud
-from plotly.subplots import make_subplots"""
+from plotly.subplots import make_subplots
 
 df = pd.read_csv("vgsales.csv")
 all_comments = pd.read_csv('all_comments.csv')
