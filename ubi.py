@@ -1,5 +1,5 @@
 import pandas as pd
-import WordCloud
+from wordcloud import WordCloud
 import plotly.graph_objs as go
 from collections import Counter
 import numpy as np
