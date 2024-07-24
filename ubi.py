@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from wordcloud import WordCloud
 import plotly.graph_objs as go
 from collections import Counter
@@ -130,7 +131,8 @@ if st.session_state.selection == "🗂️ Projet":
     #st.title("Ubisoft Analyses")
     st.header("Projet")
     
-    image = Image.open('C:/Users/Ahmed Khalil KADRI/Desktop/Analyse_VG_sales/ubisoft.png')  # Assurez-vous que le chemin de l'image est correct
+    image_path = os.path.join('images', 'ubisoft.png')
+    image = Image.open(image_path)
     st.image(image, use_column_width=True)
   
     st.markdown("""
@@ -399,18 +401,24 @@ Les jeux sélectionnés sont :
 
     # Affichage de Far Cry 6 dans la première colonne
     with col1:
+        image_path = os.path.join('images', 'FC.jpeg')
+        image = Image.open(image_path)
+        st.image(image, use_column_width=True)
         
-        st.image("C:/Users/Ahmed Khalil KADRI/Desktop/Analyse_VG_sales/FC.jpeg", caption='Far Cry 6')
 
     # Affichage de Assassin's Creed Valhalla dans la deuxième colonne
     with col2:
+        image_path = os.path.join('images', '/ACV.jpeg')
+        image = Image.open(image_path)
+        st.image(image, use_column_width=True)
         
-        st.image("C:/Users/Ahmed Khalil KADRI/Desktop/Analyse_VG_sales/ACV.jpeg", caption="Assassin's Creed Valhalla")
 
     # Affichage de Watch Dogs: Legion dans la troisième colonne
     with col3:
+        image_path = os.path.join('images', 'WDL.jpeg')
+        image = Image.open(image_path)
+        st.image(image, use_column_width=True)
         
-        st.image("C:/Users/Ahmed Khalil KADRI/Desktop/Analyse_VG_sales/WDL.jpeg", caption='Watch Dogs: Legion')
 
     st.markdown("---")
     
@@ -524,8 +532,10 @@ elif st.session_state.selection == "📉 Analyse SteamDB":
     # Créer deux colonnes
     col1, col2 = st.columns([2, 1])
     with col1:
-        image = Image.open('C:/Users/Ahmed Khalil KADRI/Desktop/Analyse_VG_sales/comnegpos.png')  
+        image_path = os.path.join('images', 'comnegpos.png')
+        image = Image.open(image_path)
         st.image(image, use_column_width=True)
+        
     
     with col2:
         st.markdown("<br>", unsafe_allow_html=True)
@@ -550,8 +560,10 @@ elif st.session_state.selection == "📉 Analyse SteamDB":
     
     col1, col2 = st.columns([1, 2])
     with col2:
-        image = Image.open('C:/Users/Ahmed Khalil KADRI/Desktop/Analyse_VG_sales/prjr.png')  
+        image_path = os.path.join('images', 'prjr.png')
+        image = Image.open(image_path)
         st.image(image, use_column_width=True)
+        
     
     with col1:
         st.markdown("<br>", unsafe_allow_html=True)
@@ -603,8 +615,10 @@ elif st.session_state.selection == "📉 Analyse SteamDB":
 elif st.session_state.selection == "🕸️ Scraping Steam":
     st.header("Scraping Steam")
     
-    image = Image.open('C:/Users/Ahmed Khalil KADRI/Desktop/Analyse_VG_sales/steam.jpg') 
+    image_path = os.path.join('images', 'steam.jpg')
+    image = Image.open(image_path)
     st.image(image, use_column_width=True)
+    
     
     st.subheader("Première étape : Présentation du Code de Scraping")
     st.markdown("""
