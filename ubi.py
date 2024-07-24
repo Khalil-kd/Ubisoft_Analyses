@@ -408,7 +408,7 @@ Les jeux sélectionnés sont :
 
     # Affichage de Assassin's Creed Valhalla dans la deuxième colonne
     with col2:
-        image_path = os.path.join('images', '/ACV.jpeg')
+        image_path = os.path.join('images', 'ACV.jpeg')
         image = Image.open(image_path)
         st.image(image, use_column_width=True)
         
